@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة AI - تعلم مهارات المستقبل</title>
+    <title>معهد Zara للتدريب - تعلم مهارات المستقبل</title>
     
     <!-- Google Fonts - Noto Sans Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +24,8 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
-                <div class="logo-icon">
-                    <i class="bi bi-stars"></i>
-                </div>
-                <span class="brand-text">منصة AI</span>
+                <img src="images/logo.png" alt="معهد Zara للتدريب" class="navbar-logo">
+                <span class="brand-text">معهد Zara للتدريب</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -39,17 +37,25 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#hero">الرئيسية</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#packages">الدورات</a>
-                    </li>
+                  
                     <li class="nav-item">
                         <a class="nav-link" href="#foundation-offer">الباقات</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#packages">الدورات</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#cta">تواصل معنا</a>
                     </li>
                 </ul>
-                <a href="#packages" class="btn btn-primary-custom">ابدأ الآن</a>
+                <div class="d-flex gap-2">
+                    <a href="https://wa.me/966566532707" target="_blank" class="btn btn-whatsapp" title="واتساب">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="tel:+966566532707" class="btn btn-primary-custom" title="اتصل بنا">
+                        <i class="bi bi-telephone-fill"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -68,17 +74,10 @@
                 <!-- Content -->
                 <div class="col-lg-6">
                     <div class="hero-content">
-                        <!-- Badge -->
-                        <div class="badge-custom mb-4">
-                            <i class="bi bi-award-fill"></i>
-                            <span>منصة الذكاء الاصطناعي السعودية المعتمدة</span>
-                        </div>
-                        
                         <!-- Headline -->
                         <h1 class="hero-title">
                             <span>تعلم مهارات المستقبل</span>
                             <span class="text-gradient">صمّم صور وفيديوهات</span>
-                            <span>واطلق إبداعك بسهولة</span>
                         </h1>
                         
                         <!-- Subheadline -->
@@ -98,78 +97,79 @@
                             </a>
                         </div>
                         
-                        <!-- Stats -->
-                        <div class="hero-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">+5000</div>
-                                <div class="stat-label">طالب</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">+50</div>
-                                <div class="stat-label">دورة</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">98%</div>
-                                <div class="stat-label">راضٍ</div>
-                            </div>
-                        </div>
+                    
                     </div>
                 </div>
                 
-                <!-- Images Grid -->
+                <!-- Hero Slider -->
                 <div class="col-lg-6">
-                    <div class="hero-images">
-                        <div class="row g-3">
-                            <!-- Main Image -->
-                            <div class="col-12">
-                                <div class="hero-image-card main-card">
-                                    <img src="images/hero-1.jpg" alt="AI Portrait" class="img-fluid">
-                                    <div class="image-overlay"></div>
-                                    <div class="image-badge">
-                                        <i class="bi bi-camera-fill"></i>
-                                        <span>تصميم الصور</span>
-                                    </div>
+                    <div class="hero-slider-wrapper">
+                        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/hero.jpg" alt="AI Portrait" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/hero-2.jpg" alt="AI Video" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/hero-3.jpg" alt="AI Photo Editing" class="d-block w-100">
                                 </div>
                             </div>
-                            <!-- Secondary Images -->
-                            <div class="col-6">
-                                <div class="hero-image-card">
-                                    <img src="images/hero-2.jpg" alt="AI Video" class="img-fluid">
-                                    <div class="image-overlay"></div>
-                                    <div class="image-badge purple">
-                                        <i class="bi bi-camera-video-fill"></i>
-                                        <span>إنتاج الفيديو</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="hero-image-card">
-                                    <img src="images/hero-3.jpg" alt="AI Photo Editing" class="img-fluid">
-                                    <div class="image-overlay"></div>
-                                    <div class="image-badge cyan">
-                                        <i class="bi bi-palette-fill"></i>
-                                        <span>المونتاج</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Floating Badge -->
-                        <div class="floating-badge">
-                            <i class="bi bi-lightning-charge-fill"></i>
-                            <span>AI Powered</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <a href="#features">
-                <span>اسحب للأسفل</span>
-                <i class="bi bi-chevron-down"></i>
-            </a>
+      
+    </section>
+
+    <!-- Stats / KPI Section -->
+    <section id="stats" class="stats-section" dir="rtl">
+        <div class="stats-overlay"></div>
+        <div class="container stats-container">
+            <div class="stats-grid">
+                <!-- Stat 1 -->
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-value">+2,300</span>
+                    </div>
+                    <div class="stat-label">مشروع فيديو تم إنشاؤه</div>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-value">+1,200</span>
+                    </div>
+                    <div class="stat-label">مقطع موسيقي تم إنتاجه</div>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-value">+5,800</span>
+                    </div>
+                    <div class="stat-label">صورة احترافية تم توليدها</div>
+                </div>
+                
+                <!-- Stat 4 -->
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-value">+312</span>
+                    </div>
+                    <div class="stat-label">طالب يتعلم الآن</div>
+                </div>
+                
+                <!-- Stat 5 -->
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-value">4.9 / 5</span>
+                    </div>
+                    <div class="stat-label">تقييم المستخدمين</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -228,6 +228,40 @@
         </div>
     </section>
 
+    <!-- Certified Platforms Section -->
+    <section id="certified-platforms" class="certified-platforms-section">
+        <div class="certified-platforms-bg">
+            <div class="gradient-orb orb-red"></div>
+            <div class="gradient-orb orb-green"></div>
+        </div>
+        <div class="container position-relative z-10">
+            <!-- Section Title -->
+            <div class="section-header text-center">
+                <h2 class="section-title">
+                    معتمد من <span class="text-gradient">المنصات السعودية</span>
+                </h2>
+            </div>
+            
+            <!-- Certification Cards -->
+            <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="certification-card">
+                        <div class="certification-image">
+                            <img src="images/raed.jpg" alt="Raed Certification" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="certification-card">
+                        <div class="certification-image">
+                            <img src="images/hawi.jpg" alt="Hawi Certification" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Foundation Day Offer Section -->
     <section id="foundation-offer" class="foundation-section">
         <div class="foundation-bg">
@@ -240,12 +274,6 @@
                 <!-- Content -->
                 <div class="col-lg-6">
                     <div class="offer-content">
-                        <!-- Badge -->
-                        <div class="offer-badge-limited">
-                            <i class="bi bi-clock-fill"></i>
-                            <span>عرض محدود لفترة محدودة</span>
-                        </div>
-                        
                         <!-- Title -->
                         <h2 class="offer-title">
                             عرض يوم <span class="text-gradient">التأسيس</span>
@@ -257,52 +285,6 @@
                             احتفالًا بـ يوم التأسيس… نقدم لك عرضًا استثنائيًا لفترة محدودة لتتعلم واحدة من أهم مهارات المستقبل!
                         </p>
                         
-                        <!-- Features -->
-                        <div class="offer-features">
-                            <p class="features-title">باقة يوم التأسيس – ماذا ستتعلم؟</p>
-                            <ul class="features-list">
-                                <li>
-                                    <i class="bi bi-check-circle-fill"></i>
-                                    <span>4 دروس قوية ومكثفة في تصميم الصور بالذكاء الاصطناعي</span>
-                                </li>
-                                <li>
-                                    <i class="bi bi-check-circle-fill"></i>
-                                    <span>تعلم استخدام أدوات AI لإنشاء صور احترافية</span>
-                                </li>
-                                <li>
-                                    <i class="bi bi-check-circle-fill"></i>
-                                    <span>أساليب التعديل والتحسين المتقدم</span>
-                                </li>
-                                <li>
-                                    <i class="bi bi-check-circle-fill"></i>
-                                    <span>تصدير الصور بجودة عالية للاستخدام التجاري</span>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <!-- Countdown -->
-                        <div class="countdown-box">
-                            <p class="countdown-label">ينتهي العرض خلال:</p>
-                            <div class="countdown-items">
-                                <div class="countdown-item">
-                                    <div class="countdown-value" id="days">03</div>
-                                    <div class="countdown-unit">يوم</div>
-                                </div>
-                                <div class="countdown-item">
-                                    <div class="countdown-value" id="hours">12</div>
-                                    <div class="countdown-unit">ساعة</div>
-                                </div>
-                                <div class="countdown-item">
-                                    <div class="countdown-value" id="minutes">45</div>
-                                    <div class="countdown-unit">دقيقة</div>
-                                </div>
-                                <div class="countdown-item">
-                                    <div class="countdown-value" id="seconds">30</div>
-                                    <div class="countdown-unit">ثانية</div>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <!-- Pricing -->
                         <div class="offer-pricing">
                             <span class="price-original">٣٠٠ ريال</span>
@@ -311,23 +293,29 @@
                         </div>
                         
                         <!-- CTA -->
-                        <button class="btn btn-primary-custom btn-lg w-100">
+                        <a href="https://zaratraining.com/" target="_blank" class="btn btn-primary-custom btn-lg">
                             <i class="bi bi-stars"></i>
                             احجز مقعدك الآن
-                        </button>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- Image -->
                 <div class="col-lg-6">
-                    <div class="offer-image-wrapper">
-                        <div class="offer-image">
-                            <img src="images/foundation-offer.jpg" alt="Foundation Day Offer" class="img-fluid">
-                            <div class="image-overlay"></div>
+                    <a href="https://zaratraining.com/" target="_blank" class="offer-image-link">
+                        <div class="offer-image-wrapper">
+                            <div class="offer-image">
+                                <img src="images/foundation-offer.jpg" alt="Foundation Day Offer" class="img-fluid">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="offer-floating-badge">
+                                <i class="bi bi-clock-fill"></i>
+                                <span>عرض محدود لفترة محدودة</span>
+                            </div>
+                            <div class="decorator decorator-red"></div>
+                            <div class="decorator decorator-green"></div>
                         </div>
-                        <div class="decorator decorator-red"></div>
-                        <div class="decorator decorator-green"></div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -343,71 +331,35 @@
             <div class="row align-items-center g-5">
                 <!-- Image (Order 2 on mobile) -->
                 <div class="col-lg-6 order-2 order-lg-1">
-                    <div class="golden-image-wrapper">
-                        <div class="golden-image">
-                            <img src="images/golden-package.jpg" alt="Golden Package" class="img-fluid">
-                            <div class="image-overlay"></div>
+                    <a href="https://zaratraining.com/" target="_blank" class="golden-image-link">
+                        <div class="golden-image-wrapper">
+                            <div class="golden-image">
+                                <img src="images/golden-package.jpg" alt="Golden Package" class="img-fluid">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="golden-frame"></div>
+                            <div class="golden-floating-badge">
+                                <i class="bi bi-star-fill"></i>
+                                <span>عرض لفترة محدودة</span>
+                            </div>
                         </div>
-                        <div class="golden-frame"></div>
-                        <div class="golden-floating-badge">
-                            <i class="bi bi-star-fill"></i>
-                            <span>الأكثر مبيعًا</span>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 
                 <!-- Content (Order 1 on mobile) -->
                 <div class="col-lg-6 order-1 order-lg-2">
                     <div class="golden-content">
-                        <!-- Badge -->
-                        <div class="golden-badge">
-                            <i class="bi bi-award-fill"></i>
-                            <span>الباقة الذهبية</span>
-                        </div>
-                        
                         <!-- Title -->
                         <h2 class="golden-title">
-                            احتراف صناعة <span class="text-gradient">الصور والفيديو</span>
+                            <span class="text-gradient-gold">الباقة الذهبية</span>
                         </h2>
-                        <p class="golden-subtitle">بالذكاء الاصطناعي</p>
                         
                         <!-- Description -->
                         <p class="golden-desc">
                             هل تريد الانتقال من مبتدئ إلى محترف في صناعة المحتوى خلال وقت قصير؟ الآن مع الباقة الذهبية ستحصل على تدريب عملي ومبسط يأخذك خطوة بخطوة من الصفر حتى الاحتراف
                         </p>
                         
-                        <!-- Features -->
-                        <ul class="golden-features">
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>تصميم الصور بالذكاء الاصطناعي</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>إنتاج الفيديوهات الاحترافية</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>المونتاج والتعديل المتقدم</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>تصدير بجودة 4K</span>
-                            </li>
-                            <li>
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>مشاريع عملية واقعية</span>
-                            </li>
-                        </ul>
-                        
-                        <!-- Bonus -->
-                        <div class="golden-bonus">
-                            <i class="bi bi-gift-fill"></i>
-                            <div>
-                                <p class="bonus-title">بونص خاص!</p>
-                                <p class="bonus-desc">قالب جاهز للمبتدئين + 5 أدوات AI مجانية</p>
-                            </div>
-                        </div>
+                   
                         
                         <!-- Pricing -->
                         <div class="golden-pricing">
@@ -417,176 +369,104 @@
                         </div>
                         
                         <!-- CTA -->
-                        <button class="btn btn-gold btn-lg w-100">
+                        <a href="https://zaratraining.com/" target="_blank" class="btn btn-gold btn-lg mx-auto">
                             <i class="bi bi-stars"></i>
                             احصل على الباقة الذهبية
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section">
-        <div class="container">
-            <!-- Section Title -->
-            <div class="section-header text-center">
-                <h2 class="section-title">
-                    ماذا يقول <span class="text-gradient">طلابنا؟</span>
-                </h2>
-                <p class="section-subtitle">
-                    آراء حقيقية من طلاب حققوا نجاحًا ملموسًا معنا
-                </p>
-            </div>
-            
-            <!-- Testimonials Grid -->
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+    <!-- AI Image Creation Course Section -->
+    <section id="ai-image-course" class="ai-course-section">
+        <div class="course-bg">
+            <div class="gradient-orb orb-course"></div>
+        </div>
+        
+        <div class="container position-relative z-10">
+            <div class="row align-items-center g-5">
+                <!-- Content -->
+                <div class="col-lg-6">
+                    <div class="course-content">
+                        <!-- Title -->
+                        <h2 class="course-title">
+                            دروس صناعة الصور بالذكاء الاصطناعي <span class="text-gradient">(30 دقيقة)</span> اونلاين
+                        </h2>
+                        
+                        <!-- What You'll Learn -->
+                        <p class="course-learning-text">
+                            ماذا ستتعلم؟ إنشاء صور احترافية باستخدام الذكاء الاصطناعي كتابة الأوامر (Prompts) بطريقة صحيحة للحصول على أفضل النتائج أسرار احترافية للحصول على أفكار إبداعية بسرعة
+                        </p>
+                        
+                        <!-- Pricing -->
+                        <div class="course-pricing">
+                            <span class="price-discount">١٠٠ ريال</span>
+                            <span class="price-original">بدلًا من ١٤٠ ريال</span>
                         </div>
-                        <p class="testimonial-text">"تغيرت حياتي المهنية بعد هذه الدورات. الآن أعمل مصمم AI مستقل وأحقق دخل ممتاز."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">أ</div>
-                            <span class="author-name">أحمد محمد</span>
-                        </div>
+                        
+                        <!-- CTA -->
+                        <a href="https://zaratraining.com/EXeRrGG" target="_blank" class="btn btn-primary-custom btn-lg mx-auto">
+                            <i class="bi bi-stars"></i>
+                            سجل الآن
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                
+                <!-- Image -->
+                <div class="col-lg-6">
+                    <a href="https://zaratraining.com/EXeRrGG" target="_blank" class="course-image-link">
+                        <div class="course-image-wrapper">
+                            <div class="course-image">
+                                <img src="images/hero-1.jpg" alt="AI Image Creation Course" class="img-fluid">
+                                <div class="image-overlay"></div>
+                            </div>
                         </div>
-                        <p class="testimonial-text">"شرح مبسط وعملي، أنصح كل من يريد دخول عالم الذكاء الاصطناعي بهذه المنصة."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">س</div>
-                            <span class="author-name">سارة العلي</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="testimonial-text">"الدعم المستمر من الفريق كان مذهلاً. أي سؤال يتم الرد عليه خلال ساعات."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">خ</div>
-                            <span class="author-name">خالد عبدالله</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="testimonial-text">"الباقة الذهبية كانت استثمارًا رائعًا. تعلمت أكثر مما توقعت في وقت قصير."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">ن</div>
-                            <span class="author-name">نورة الفهد</span>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq-section">
-        <div class="container">
-            <!-- Section Title -->
-            <div class="section-header text-center">
-                <h2 class="section-title">
-                    الأسئلة <span class="text-gradient">الشائعة</span>
-                </h2>
-                <p class="section-subtitle">
-                    إجابات على أكثر الأسئلة تكرارًا
-                </p>
-            </div>
-            
-            <!-- FAQ Accordion -->
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    هل أحتاج خبرة سابقة في التصميم؟
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    لا، دوراتنا مصممة للمبتدئين والمحترفين. نبدأ من الأساسيات ونتقدم خطوة بخطوة.
-                                </div>
+    <!-- CV Review Section -->
+    <section id="cv-review" class="cv-review-section">
+        <div class="cv-review-bg">
+            <div class="gradient-orb orb-cv"></div>
+        </div>
+        
+        <div class="container position-relative z-10">
+            <div class="row align-items-center g-5">
+                <!-- Image -->
+                <div class="col-lg-6">
+                    <a href="https://embeddable.live/embed/7FjiAs-78L" target="_blank" class="cv-review-image-link">
+                        <div class="cv-review-image-wrapper">
+                            <div class="cv-review-image">
+                                <img src="images/1.jpg" alt="CV Review Service" class="img-fluid">
+                                <div class="image-overlay"></div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    كم مدة الدورة؟
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    تختلف المدة حسب الباقة. الباقة الأساسية 4 دروس، والباقة الذهبية تشمل 12 درسًا شاملاً.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    هل أحصل على شهادة بعد إتمام الدورة؟
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    نعم، تحصل على شهادة معتمدة من المنصة تؤهلك لسوق العمل السعودي.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    هل يمكنني الوصول للمحتوى بعد انتهاء الدورة؟
-                                </button>
-                            </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    بالتأكيد! تستطيع الوصول لجميع الدروس والمواد مدى الحياة.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                    ما وسائل الدفع المتاحة؟
-                                </button>
-                            </h2>
-                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    نقبل جميع البطاقات الائتمانية، مدى، Apple Pay، Google Pay، والتحويل البنكي.
-                                </div>
-                            </div>
-                        </div>
+                    </a>
+                </div>
+                
+                <!-- Content -->
+                <div class="col-lg-6">
+                    <div class="cv-review-content">
+                        <!-- Title -->
+                        <h2 class="cv-review-title">
+                            راجع سيرتك الذاتية قبل ما تضيع فرصة العمر
+                        </h2>
+                        
+                        <!-- Description -->
+                        <p class="cv-review-desc">
+                            احصل على تقرير احترافي ومفصل يوضح نقاط القوة والضعف في سيرتك الذاتية، مع تحليل توافقها مع أنظمة التوظيف الذكية (ATS)، لتزيد فرصك في الوصول إلى المقابلة بثقة.
+                        </p>
+                        
+                        <!-- CTA -->
+                        <a href="https://embeddable.live/embed/7FjiAs-78L" target="_blank" class="btn btn-primary-custom btn-lg mx-auto">
+                            <i class="bi bi-file-earmark-check"></i>
+                            افحص السيرة الذاتية
+                        </a>
                     </div>
                 </div>
             </div>
@@ -609,9 +489,9 @@
                         انضم لآلاف الطلاب الذين يغيرون مستقبلهم المهني معنا
                     </p>
                     <div class="cta-buttons">
-                        <a href="#packages" class="btn btn-primary-custom btn-lg">
-                            <i class="bi bi-stars"></i>
-                            سجل الآن
+                        <a href="https://wa.me/966566532707" target="_blank" class="btn btn-whatsapp btn-lg">
+                            <i class="bi bi-whatsapp"></i>
+                            واتساب
                         </a>
                         <a href="#" class="btn btn-secondary-custom btn-lg">
                             <i class="bi bi-headset"></i>
@@ -626,61 +506,17 @@
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
-            <div class="row g-4">
-                <!-- Logo & About -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="footer-brand">
-                        <div class="d-flex align-items-center gap-2 mb-3">
-                            <div class="logo-icon">
-                                <i class="bi bi-stars"></i>
-                            </div>
-                            <span class="brand-text">منصة AI</span>
-                        </div>
-                        <p class="footer-about">
-                            منصة الذكاء الاصطناعي السعودية المعتمدة لتعليم صناعة المحتوى
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Quick Links -->
-                <div class="col-md-6 col-lg-3">
-                    <h4 class="footer-title">روابط سريعة</h4>
-                    <ul class="footer-links">
-                        <li><a href="#hero">الرئيسية</a></li>
-                        <li><a href="#packages">الدورات</a></li>
-                        <li><a href="#foundation-offer">الباقات</a></li>
-                        <li><a href="#cta">تواصل معنا</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Courses -->
-                <div class="col-md-6 col-lg-3">
-                    <h4 class="footer-title">الدورات</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">تصميم الصور بالAI</a></li>
-                        <li><a href="#">إنتاج الفيديو بالAI</a></li>
-                        <li><a href="#">المونتاج الاحترافي</a></li>
-                        <li><a href="#">الباقة الذهبية</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact -->
-                <div class="col-md-6 col-lg-3">
-                    <h4 class="footer-title">تواصل معنا</h4>
-                    <ul class="footer-contact">
-                        <li>البريد: info@ai-platform.sa</li>
-                        <li>الهاتف: 9200XXXX</li>
-                        <li>العنوان: الرياض، المملكة العربية السعودية</li>
-                    </ul>
-                </div>
-            </div>
-            
             <!-- Copyright -->
             <div class="footer-bottom">
-                <p>© 2024 منصة AI. جميع الحقوق محفوظة.</p>
+                <p>© 2026 معهد Zara للتدريب. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/966566532707" target="_blank" class="floating-whatsapp" title="تواصل معنا عبر واتساب">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

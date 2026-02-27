@@ -242,46 +242,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(rippleStyle);
     
     // ========================================
-    // Stats Counter Animation
-    // ========================================
-    const statNumbers = document.querySelectorAll('.stat-number');
-    
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const target = entry.target;
-                const text = target.textContent;
-                const hasPlus = text.includes('+');
-                const hasPercent = text.includes('%');
-                const numericValue = parseInt(text.replace(/[^0-9]/g, ''));
-                
-                let current = 0;
-                const increment = Math.ceil(numericValue / 50);
-                const duration = 1500;
-                const stepTime = duration / (numericValue / increment);
-                
-                const counter = setInterval(() => {
-                    current += increment;
-                    if (current >= numericValue) {
-                        current = numericValue;
-                        clearInterval(counter);
-                    }
-                    
-                    let displayValue = current.toLocaleString();
-                    if (hasPlus) displayValue = '+' + displayValue;
-                    if (hasPercent) displayValue = displayValue + '%';
-                    
-                    target.textContent = displayValue;
-                }, stepTime);
-                
-                counterObserver.unobserve(target);
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    statNumbers.forEach(stat => counterObserver.observe(stat));
-    
-    // ========================================
     // Image Lazy Loading
     // ========================================
     const images = document.querySelectorAll('img');
@@ -343,6 +303,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     // Console Welcome Message
     // ========================================
-    console.log('%cمنصة AI', 'font-size: 24px; font-weight: bold; color: #4f46e5;');
+    console.log('%cمعهد Zara للتدريب', 'font-size: 24px; font-weight: bold; color: #4f46e5;');
     console.log('%cتعلم مهارات المستقبل مع الذكاء الاصطناعي', 'font-size: 14px; color: #94a3b8;');
 });
