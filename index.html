@@ -18,6 +18,19 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+        <!-- TikTok Pixel Code Start -->
+        <script>
+            !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+            var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+            ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+            ttq.load('D6HMKDJC77U61H03L19G');
+            ttq.page();
+            }(window, document, 'ttq');
+        </script>
+        <!-- TikTok Pixel Code End -->
 </head>
 <body>
     <!-- Navigation -->
@@ -523,5 +536,61 @@
     
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    
+    <!-- TikTok Pixel Tracking -->
+    <script>
+        (function() {
+            if (typeof ttq === 'undefined') return;
+            
+            const currentDomain = window.location.hostname;
+            
+            document.addEventListener('click', function(e) {
+                const link = e.target.closest('a');
+                if (!link || !link.href) return;
+                
+                const href = link.href;
+                const target = link.getAttribute('target');
+                
+                // WhatsApp tracking
+                if (href.includes('wa.me') || href.includes('whatsapp.com') || href.startsWith('https://api.whatsapp.com')) {
+                    e.preventDefault();
+                    ttq.track('Contact', {
+                        action_type: 'whatsapp_click'
+                    });
+                    setTimeout(() => {
+                        window.open(href, target || '_self');
+                    }, 100);
+                    return;
+                }
+                
+                // Phone call tracking
+                if (href.startsWith('tel:')) {
+                    ttq.track('Contact', {
+                        action_type: 'phone_call_click'
+                    });
+                    return;
+                }
+                
+                // External link tracking
+                try {
+                    const linkUrl = new URL(href, window.location.origin);
+                    const isExternal = linkUrl.hostname !== currentDomain;
+                    const isBlank = target === '_blank';
+                    
+                    if (isExternal || isBlank) {
+                        e.preventDefault();
+                        ttq.track('ViewContent', {
+                            action_type: 'external_redirect_click'
+                        });
+                        setTimeout(() => {
+                            window.open(href, target || '_self');
+                        }, 100);
+                    }
+                } catch(err) {
+                    // Invalid URL, ignore
+                }
+            }, true);
+        })();
+    </script>
 </body>
 </html>
